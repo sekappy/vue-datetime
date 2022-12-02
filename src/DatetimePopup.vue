@@ -28,6 +28,7 @@
           :min-date="minDatetime"
           :max-date="maxDatetime"
           :week-start="weekStart"
+          :isJapanese="isJapanese"
       ></datetime-calendar>
       <datetime-time-picker
           v-if="step === 'time'"
@@ -122,6 +123,10 @@ export default {
     },
     title: {
       type: String
+    },
+    isJapanese: {
+      type: Boolean,
+      default: false
     }
   },
 
